@@ -1,0 +1,195 @@
+@media (max-width: 600px) {
+  :root {
+    font-size: 10px; /* Base font size */
+  }
+}
+@media (max-width: 300px) {
+  :root {
+    font-size: 5px; /* Base font size */
+  }
+}
+
+body,
+html {
+  margin: 0;
+  height: 100%;
+}
+
+* {
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  box-sizing: border-box;
+}
+
+#canvas-container {
+  position: fixed;
+  top: 0;
+}
+
+#stars {
+  position: fixed;
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+}
+
+.star {
+  background-color: #777;
+  /* width: 2px; */
+  position: absolute;
+  transition: transform 0.1s, width 0.1s;
+}
+
+.fill-screen {
+  height: 100vh;
+  padding-inline: 2rem;
+  position: relative;
+}
+
+.half-screen {
+  height: 50vh;
+  padding-inline: 2rem;
+  position: relative;
+}
+
+.start {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.back {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.arrow {
+  height: 1rem;
+}
+
+.arrow path {
+  fill: white;
+}
+
+.back .arrow {
+  transform: rotate(180deg);
+}
+
+.back:hover span {
+  color: #888;
+}
+.back:hover .arrow path {
+  fill: #888;
+}
+
+.thx {
+  color: #fff !important;
+}
+
+.title {
+  font-size: 10rem;
+  line-height: 8rem;
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 0.1rem;
+  -webkit-text-stroke-color: white;
+  display: block;
+  margin: 0;
+  font-weight: 100;
+}
+
+.description {
+  position: absolute;
+  font-size: 1.5rem;
+  bottom: 0;
+  /* min-width: 20rem; */
+}
+
+.description h2 {
+  margin: 0 0 1rem 0;
+  opacity: 0.6;
+}
+
+.description span {
+  color: #aaa;
+}
+
+.cube {
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+
+.side {
+  height: 100%;
+  width: 1rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.one {
+  background-color: #ff440020;
+}
+
+.one .side {
+  background-color: #ff4500;
+}
+
+.one h2 {
+  color: #ff4500;
+}
+
+.two {
+  background-color: #00ff7725;
+}
+
+.two .side {
+  background-color: #00ff77;
+}
+
+.two h2 {
+  color: #00ff77;
+}
+
+.three {
+  background-color: #aee8ff30;
+}
+
+.three .side {
+  background-color: #aee8ff;
+}
+
+.three h2 {
+  color: #aee8ff;
+}
+
+.four {
+  background-color: #00bbff30;
+}
+
+.four .side {
+  background-color: #00bbff;
+}
+
+.four h2 {
+  color: #00bbff;
+}
+
+.five {
+  background-color: #aaaaff30;
+}
+
+.five .side {
+  background-color: #aaaaff;
+}
+
+.five h2 {
+  color: #aaaaff;
+}
