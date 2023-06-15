@@ -348,7 +348,6 @@ gsap.to(".container", {
     end: "bottom bottom",
     refreshPriority: -1,
     onUpdate: (self) => {
-      console.log(camera.position);
       updateSolidsPos(self.progress);
       const vel = self.getVelocity();
       proxy.vel = vel;
